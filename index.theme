@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=Gos
+Type=X-GNOME-Metatheme
+Comment=Gnome theme
+Encoding=UTF-8
+GtkTheme=Gos
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24
