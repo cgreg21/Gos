@@ -3,8 +3,8 @@
 
 $base_color: if($variant == 'light', #ffffff, #232729);
 $text_color: if($variant == 'light', rgb(58, 58, 58), white);
-$bg_color: if($variant == 'light', #ffffff, #33393b);
-$fg_color: if($variant == 'light', #2e3436, #eeeeec);
+$bg_color: if($variant == 'light', #ffffff, #000000);
+$fg_color: if($variant == 'light', #000000, #eeeeec);
 
 $selected_fg_color: #ffffff;
 $selected_bg_color: if($variant == 'light', #4a90d9, darken(#4a90d9, 20%));
@@ -13,17 +13,9 @@ $selected_borders_color: if(
   $selected_bg_color,
   darken($selected_bg_color, 20%)
 );
-$borders_color: if($variant == 'light', $bg_color, darken($bg_color, 10%));
-$alt_borders_color: if(
-  $variant == 'light',
-  darken($bg_color, 35%),
-  darken($bg_color, 17%)
-);
-$borders_edge: if(
-  $variant == 'light',
-  $bg_color,
-  transparentize($fg_color, 0.93)
-);
+$borders_color: $bg_color;
+$alt_borders_color: $bg_color;
+$borders_edge: $bg_color;
 $link_color: if(
   $variant == 'light',
   darken($selected_bg_color, 10%),

@@ -1783,9 +1783,7 @@ searchbar,
 headerbar {
   padding: 0 6px;
   min-height: 46px;
-  border-width: 0 0 1px;
-  border-style: solid;
-  border-color: $alt_borders_color;
+  border-width: 0;
   border-radius: 0;
 
   @include headerbar_fill;
@@ -1833,7 +1831,7 @@ headerbar {
     }
 
     button {
-      @include button(normal, $selected_bg_color, $selected_fg_color);
+      @include button(undecorated);
 
       &.flat {
         @include button(undecorated);
