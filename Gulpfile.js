@@ -18,7 +18,7 @@ gulp.task('shell-style', function(done) {
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./gnome-shell/'))
     .pipe(
-      exec('gsettings set org.gnome.shell.extensions.user-theme name "Sweet"'),
+      exec('gsettings set org.gnome.shell.extensions.user-theme name "Gos"'),
     );
 
   done();
